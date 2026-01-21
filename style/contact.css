@@ -1,0 +1,152 @@
+.main {
+  min-height: calc(100vh - 72px);
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 40px;
+  z-index: 1;
+}
+
+.main p,
+h2 {
+  padding: 0;
+  margin: 0;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  align-items: center;
+  color: #19191f;
+  width: 100%;
+}
+
+.hero-text > h1 {
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-text > p {
+  font-size: 18px;
+  opacity: 0.9;
+  width: 616px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-section {
+  display: flex;
+  margin-top: 32px;
+  column-gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-details,
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 576px;
+  height: 520px;
+  border-radius: 16px;
+  box-shadow:
+    0px 0px 2px rgba(0, 0, 0, 0.12),
+    0px 1px 2.5px rgba(0, 0, 0, 0.15);
+  padding: 24px;
+  color: #171a1f;
+  font-size: 16px;
+}
+
+.contact-form-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+  margin-top: 18px;
+}
+
+.contact-form-info input,
+textarea {
+  height: 38px;
+  border-radius: 10px;
+  padding-left: 12px;
+  border: solid 1px #dee1e6;
+  font-size: 14px;
+  color: #565d6d;
+}
+
+.contact-form-info div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+#message {
+  height: 120px;
+}
+
+.send-button {
+  all: unset;
+  width: 528px;
+  height: 44px;
+  border-radius: 16px;
+  background-color: #1f8cf9;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 22px;
+  transition: background-color 0.2s ease;
+}
+
+.send-button:hover {
+  background-color: #1878c2;
+  transform: color 0.2s ease;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.contact-details div:not(.location, .operating-hours) {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.email p {
+  color: #1f8cf9;
+  font-size: 18px;
+}
+
+.location {
+  display: flex;
+  column-gap: 12px;
+  align-items: flex-start;
+}
+
+.location .address {
+  font-family: Inter;
+  font-size: 18px;
+  color: #171a1f;
+  margin-bottom: 20px;
+}
+
+.operating-hours {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.operating-hours p{
+  color: #565d6d;
+  font-size: 16px;
+}

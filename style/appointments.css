@@ -1,0 +1,188 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 104px 168px 40px 168px;
+}
+#my-appointments {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 23px;
+  column-gap: 24px;
+}
+.appointment {
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  height: 287px;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow:
+    0px 0px 2px rgba(0, 0, 0, 0.12),
+    0px 1px 2.5px rgba(0, 0, 0, 0.15);
+}
+
+.profile-info {
+  display: flex;
+  column-gap: 16px;
+}
+
+.appointment .avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #1f8cf9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 1px;
+}
+
+.service-info p {
+  margin: 0px;
+}
+
+.service-info p.name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #171a1f;
+}
+
+.service-info p.type {
+  font-size: 14px;
+  color: #565d6d;
+}
+
+.appointment hr {
+  width: 312px;
+  margin-top: 16px;
+  border: none;
+  height: 1px;
+  background-color: #dee1e6;
+  
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    margin-top: 18px;
+}
+
+
+.schedule .date, .time{
+    display: flex;
+    column-gap: 8px;
+    color: #565d6d;
+    font-size: 16px;
+}
+
+.schedule p {
+    margin: 0;
+}
+
+.status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 2px 6px;
+    color: #171a1f;
+    font-size: 12px;
+    margin-top: 17px;
+}
+
+.action-buttons {
+    display: flex;
+    column-gap: 8px;
+    width: 240px;
+    font-size: 14px;
+    margin-left: 72px;
+}
+
+.reschedule {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 129px;
+    transition: transform 0.15s ease;
+    cursor: pointer;
+}
+
+.cancel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 103px;
+    transition: transform 0.25s ease;
+    cursor: pointer;
+}
+
+
+.action-buttons .reschedule:hover,
+.action-buttons .cancel:hover {
+  transform: scale(1.05);
+}
+
+.action-buttons img {
+  transition: transform 0.2s ease;
+}
+
+.action-buttons img:hover {
+  transform: scale(1.2);
+}
+
+
+.schedule input {
+    height: 20px;
+    border-radius: 6px;
+    padding-left: 12px;
+    border: solid 1px #dee1e6;
+    font-size: 14px;
+}
+
+.edit-buttons {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    
+}
+
+.apply-changes, .cancel-edit{
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    background-color: #1F8CF9;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    padding: 4px;
+}
+
+.apply-changes:hover {
+    background-color: #1878c2;
+    transform: color 0.2s ease;
+}
+
+.cancel-edit {
+    background-color: #dd3c3c;
+}
+
+.cancel-edit:hover {
+    background-color: #C22F2F;
+    transform: color 0.2s ease;
+}
+
+.edit-buttons img {
+  transition: transform 0.2s ease;
+}
+
+.edit-buttons img:hover {
+  transform: scale(1.2);
+}

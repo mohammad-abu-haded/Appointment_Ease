@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/contact.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <div class="logo-image">
+          <img src="./imgs/calendar-check-regular-full.svg" />
+        </div>
+        <p>AppointmentEase</p>
+      </div>
+      <nav class="nav">
+        <a href="./index.html">Home</a>
+        <a href="./book.html">Book Appointment</a>
+        <a href="./appointments.html">My Appointment</a>
+        <div class="current-page">Contact</div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="hero-text">
+        <h1 style="font-size: 48px">Get in Touch</h1>
+        <p>
+          We'd love to hear from you! Whether you have a question, feedback, or
+          need support, please reach out to us.
+        </p>
+      </div>
+      <div class="contact-section">
+        <div class="contact-form">
+          <form onsubmit="submitForm(event)">
+            <h2 style="font-size: 24px">Send Us a Message</h2>
+            <div class="contact-form-info">
+              <div class="name">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="John Doe" required/>
+              </div>
+              <div class="email">
+                <label for="email">Your Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="john.doe@example.com"
+                  required
+                />
+              </div>
+              <div class="message">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  placeholder="How can we help you today?"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <button class="send-button" type="submit">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-details">
+          <h2 style="font-size: 24px; margin-bottom: 4px">
+            Our Contact Details
+          </h2>
+          <div class="phone">
+            <img src="./imgs/telephone-svgrepo-com.svg" />
+            <p>+972 592567428</p>
+          </div>
+          <div class="email">
+            <img src="./imgs/email-1-svgrepo-com.svg" />
+            <p>mo.abu.haded@gmail.com</p>
+          </div>
+          <div class="location">
+            <img src="./imgs/location-pin-alt-1-svgrepo-com.svg" />
+            <div class="address">
+              Qeitun Neighborhood, Abu Sneineh Area<br />
+              Hebron City, Hebron Governorate<br />
+              State of Palestine
+            </div>
+          </div>
+          <div class="operating-hours">
+            <h2 style="font-size: 20px">Operating Hours</h2>
+            <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+            <p>Saturday: 10:00 AM - 2:00 PM</p>
+            <p>Sunday: Closed</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script/contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book</title>
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="style/book.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <div class="logo-image">
+          <img src="./imgs/calendar-check-regular-full.svg" />
+        </div>
+        <p>AppointmentEase</p>
+      </div>
+      <nav class="nav">
+        <a href="./index.html">Home</a>
+        <div class="current-page">Book Appointment</div>
+        <a href="./appointments.html">My Appointment</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero-text">
+        <h1 style="font-size: 48px">Book Your Appointment</h1>
+        <p>
+          Please fill out the form below to schedule your appointment. We'll
+          confirm your booking shortly.
+        </p>
+      </div>
+
+      <div class="form">
+        <h2 style="margin: 0; font-size: 24px; color: #171a1f">
+          Appointment Details
+        </h2>
+        <p style="margin: 6px 0px 24px 0px; font-size: 16px; color: #565d6d">
+          Enter your information and desired appointment specifics.
+        </p>
+        <form onsubmit="submitForm(event)">
+          <div class="form-info">
+            <div class="name-input">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="John Doe" required/>
+            </div>
+
+            <div class="service-schedule">
+              <div class="service-type">
+                <label for="serviceType">Service Type</label>
+                <select id="serviceType" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="Medical Consultation">Medical Consultation</option>
+                  <option value="Personal Training">Personal Training</option>
+                  <option value="Academic Tutoring">Academic Tutoring</option>
+                  <option value="Hair Styling & Grooming">Hair Styling & Grooming</option>
+                  <option value="Beauty & Hair Treatments">Beauty & Hair Treatments</option>
+                  <option value="Yoga & Wellness Classes">Yoga & Wellness Classes</option>
+                </select>
+              </div>
+
+              <div class="service-date">
+                <label for="date">Date</label>
+                <input type="date" id="date" required/>
+              </div>
+            </div>
+
+            <div class="service-time">
+              <label for="time">Time</label>
+              <input type="time" id="time" required/>
+            </div>
+
+            <div class="notes">
+              <label for="notes">Notes (Optional)</label>
+              <textarea
+                id="notes"
+                placeholder="Any specific requests or additional details..."
+              ></textarea>
+            </div>
+          </div>
+          <button class="submit-button" type="submit">
+            Confirm Appointment
+          </button>
+        </form>
+      </div>
+    </main>
+    <script src="./script/book.js"></script>
+  </body>
+</html>
